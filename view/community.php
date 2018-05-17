@@ -17,7 +17,7 @@ require_once('header_media.php');
               <?php 
                 $sql="select * from management_team";
                 $loginQuery=mysqli_query($link, $sql);
-                while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
               ?>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 mb30 margin-top-10">
                     <div class="tutor-block clearfix">

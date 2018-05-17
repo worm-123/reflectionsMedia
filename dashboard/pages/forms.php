@@ -4,7 +4,7 @@ if(!!@$_GET['editId']){
  $getEditid= base64_decode(@$_GET['editId']);
  $sql="SELECT  * FROM  `theatre_cafe` WHERE `id`='$getEditid'";
  $loginQuery=mysqli_query($link, $sql);
- $row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);
+ $row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);
 }
 
 if(isset($_POST['submit'])){
@@ -105,27 +105,27 @@ echo '<div class="bs-example">
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Play Name</label>
-                                            <input class="form-control" value="<?php echo @$row['play_name'];?>" name="play_name" placeholder="Enter price">
+                                            <input class="form-control" value="<?php echo @$row['play_name'];?>" name="play_name" placeholder="Enter play name">
                                         </div>
                                         <div class="form-group">
                                             <label>Duration</label>
-                                            <input class="form-control" value="<?php echo @$row['duration'];?>" name="duration" placeholder="Enter price">
+                                            <input class="form-control" value="<?php echo @$row['duration'];?>" name="duration" placeholder="Enter duration">
                                         </div>
                                         <div class="form-group">
                                             <label>Time</label>
-                                            <input class="form-control"  value="<?php echo @$row['time'];?>" name="time" placeholder="Enter price">
+                                            <input class="form-control"  value="<?php echo @$row['time'];?>" name="time" placeholder="Enter Time">
                                         </div>
                                         <div class="form-group">
                                             <label>Director</label>
-                                            <input class="form-control" value="<?php echo @$row['director'];?>" name="director" placeholder="Enter price">
+                                            <input class="form-control" value="<?php echo @$row['director'];?>" name="director" placeholder="Enter director">
                                         </div>
                                         <div class="form-group">
                                             <label>Stars</label>
-                                            <input class="form-control" value="<?php echo @$row['starring'];?>" name="starring" placeholder="Enter price">
+                                            <input class="form-control" value="<?php echo @$row['starring'];?>" name="starring" placeholder="Enter starts">
                                         </div>
                                         <div class="form-group">
                                             <label>Play By</label>
-                                            <input class="form-control" value="<?php echo @$row['play_by'];?>" name="play_by" placeholder="Enter price">
+                                            <input class="form-control" value="<?php echo @$row['play_by'];?>" name="play_by" placeholder="Enter play by">
                                         </div>
                                         <div class="form-group">
                                             <label>Discription</label>
@@ -141,15 +141,15 @@ echo '<div class="bs-example">
                                         </div>
                                         <div class="form-group">
                                             <label>price with food</label>
-                                            <input class="form-control" value="<?php echo @$row['price_food'];?>" name="price_food" placeholder="Enter text">
+                                            <input class="form-control" value="<?php echo @$row['price_food'];?>" name="price_food" placeholder="Enter price with food">
                                         </div>
                                         <div class="form-group">
                                            <label>price with indian liquor</label>
-                                            <input class="form-control" value="<?php echo @$row['price_indianLiquor'];?>"  name="price_indianLiquor" placeholder="Enter text">
+                                            <input class="form-control" value="<?php echo @$row['price_indianLiquor'];?>"  name="price_indianLiquor" placeholder="Enter price with indian liquor">
                                         </div>
                                         <div class="form-group">
                                            <label>price with foreign liquor</label>
-                                            <input class="form-control"  value="<?php echo @$row['price_foreignLiquor'];?>" name="price_foreignLiquor" placeholder="Enter text">
+                                            <input class="form-control"  value="<?php echo @$row['price_foreignLiquor'];?>" name="price_foreignLiquor" placeholder="Enter price with foreign liquor">
                                         </div>
                                         <div class="form-group">
                                             <label>Big Image</label>

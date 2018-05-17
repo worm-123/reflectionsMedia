@@ -94,7 +94,7 @@ echo '<div class="bs-example">
                                     <?php 
                                         $sql="SELECT  * FROM  `about_us` ORDER BY `id` DESC";
                                         $loginQuery=mysqli_query($link, $sql);
-                                        while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                                        while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                     ?>
                                     <tr class="even gradeC">
                                         <td><a href="forms.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>

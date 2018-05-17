@@ -96,7 +96,7 @@ if(isset($_POST["forgotPassword"])){
 
    $sql="select * from `signup` where `email`= '$email'";
    $loginQuery=mysqli_query($link, $sql);
-   $row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);
+   $row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);
    if($row){
 	
     if($_COOKIE['otp_genrate'] == $getOTP){

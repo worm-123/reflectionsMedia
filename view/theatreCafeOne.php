@@ -17,7 +17,7 @@ require_once('header_threatre.php');
             <?php 
 				$sql="select * from theatre_cafe";
 				$loginQuery=mysqli_query($link, $sql);
-				while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+				while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
 				?>
                 <li>
                 	<p class="PlayTxtVideo">PLAY:<?php echo $row['play_name']; ?></p>
@@ -58,7 +58,7 @@ require_once('header_threatre.php');
             <?php 
                 $sql="select * from theatre_cafe";
                 $loginQuery=mysqli_query($link, $sql);
-                while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                 ?>
                 <li>
                     <p class="PlayTxtVideo">PLAY:<?php echo $row['play_name']; ?></p>

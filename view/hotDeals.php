@@ -19,7 +19,7 @@ require_once('header_media.php');
                 $sql="SELECT * FROM `hot_deals` ";//WHERE `uploadedDate`= '$dateFormated'
 
                 $loginQuery=mysqli_query($link, $sql);
-                while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
               ?>
 
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center margin-top-10">

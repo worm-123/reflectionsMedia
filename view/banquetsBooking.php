@@ -10,7 +10,7 @@ require_once('header_threatre.php');
 			$name=@$_GET['name'];
 			$sql="select * from banquets_booking where banquets_name='$name'";
 			$loginQuery=mysqli_query($link, $sql);
-			$row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);
+			$row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);
 			?>
 		<div class="col-md-12 margin-top-20">
 			<p class="navigationTxt"><span>YOU ARE BOOKING</span> BANQUETS NAME <?php if($name == 'first'){ echo '1';}else{ echo '2';} ?></p>

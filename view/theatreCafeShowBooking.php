@@ -9,7 +9,7 @@ require_once('header_threatre.php');
 			$id=base64_decode($_GET['id']);
 			$sql="select * from theatre_cafe where id='$id'";
 			$loginQuery=mysqli_query($link, $sql);
-			$row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);
+			$row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);
 			?>
 		<div class="col-md-12 margin-top-20">
 			<p class="navigationTxt"><span>YOU ARE BOOKING</span> <?php echo $row['play_name'];?></p>

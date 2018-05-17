@@ -74,7 +74,7 @@
                                     <?php 
                                         $sql="select * from signup";
                                         $loginQuery=mysqli_query($link, $sql);
-                                        while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                                        while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                     ?>
                                     <tr class="even gradeC">
                                         <td><?php echo $row['email'] ?></td>

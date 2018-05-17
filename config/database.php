@@ -1,11 +1,11 @@
 <?php 
 $server="localhost";
-$username="webReflections";
-$password="webReflections@123#";
-$database="webReflections";//
-//$username="root";
-//$password="";
-//$database ="reflections";
+//$username="webReflections";
+//$password="webReflections@123#";
+//$database="webReflections";//
+$username="root";
+$password="";
+$database ="webReflections";
 $link = mysqli_connect($server, $username, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());

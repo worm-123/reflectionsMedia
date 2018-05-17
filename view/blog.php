@@ -39,7 +39,7 @@ require_once('header.php');
   
             $sql="SELECT * FROM `blog` ORDER BY `id` DESC LIMIT $start_from, $limit";
             $loginQuery=mysqli_query($link, $sql);
-            while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+            while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
         ?>
 			<h1 class="about_hospitality"><?php echo $row['heading'] ?></h1>
             <p class="text-center">by <?php echo $row['postedBy']?></p>

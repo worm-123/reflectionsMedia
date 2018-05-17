@@ -4,7 +4,7 @@ require_once('../config/database.php');
     $email=base64_decode($_COOKIE['username']);
     $sql="select * from `signup` where `email`='$email'";
     $loginQuery=mysqli_query($link, $sql);
-    $row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);       
+    $row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);       
 
     if(isset($_POST["updateInfo"])){
            $mobile=$_REQUEST['mobile'];

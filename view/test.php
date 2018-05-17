@@ -50,7 +50,7 @@
             die('Could not get data: ' . mysql_error());
          }
          
-         while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
+         while($row = mysql_fetch_array($retval, MYSQLI_ASSOC)) {
             echo "EMP ID :{$row['emp_id']}  <br> ".
                "EMP NAME : {$row['emp_name']} <br> ".
                EMP SALARY : {$row['emp_salary']} <br> ".

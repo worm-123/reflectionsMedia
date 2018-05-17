@@ -4,7 +4,7 @@ if(!!@$_GET['editId']){
  $getEditid= base64_decode(@$_GET['editId']);
  $sql="SELECT * FROM `about_us` WHERE `id`='$getEditid'";
  $loginQuery=mysqli_query($link, $sql);
- $row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC);
+ $row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC);
 }
 
 if(isset($_POST['submit'])){

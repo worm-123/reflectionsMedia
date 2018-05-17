@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
                                             <?php 
                                                 $sql="select * from theatre_cafe";
                                                 $loginQuery=mysqli_query($link, $sql);
-                                                while($row = mysqli_fetch_array($loginQuery, MYSQL_ASSOC)){
+                                                while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                             ?>
                                                 <option value="<?php echo $row['id']?>"><?php echo $row['play_name'] ?></option>
                                             <?php } ?>
