@@ -45,5 +45,14 @@ if(mail_status == 1){
 
 </body>
 </html>
-
+<script>
+	document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 85)) {
+            return false;
+        } else {
+            return true;
+        }
+	};
+</script>
 <?php session_unset(); ?>
