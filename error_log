@@ -1,0 +1,7 @@
+[14-Feb-2018 18:05:50 UTC] PHP Notice:  Undefined index: HTTP_CLIENT_IP in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 3
+[14-Feb-2018 18:05:59 UTC] PHP Notice:  Undefined index: HTTP_CLIENT_IP in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 3
+[14-Feb-2018 18:15:57 UTC] PHP Notice:  Undefined index: HTTP_CLIENT_IP in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 3
+[14-Feb-2018 18:16:47 UTC] PHP Notice:  Undefined index: IP in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 3
+[14-Feb-2018 18:17:46 UTC] PHP Notice:  Undefined index: IP in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 3
+[14-Feb-2018 18:21:13 UTC] PHP Parse error:  syntax error, unexpected 'text' (T_STRING), expecting ',' or ';' in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 2
+[14-Feb-2018 18:21:20 UTC] PHP Parse error:  syntax error, unexpected 'text' (T_STRING), expecting ',' or ';' in /home/flyingarrow1/public_html/reflectionsmedia.in/index.php on line 2

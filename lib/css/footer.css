@@ -1,0 +1,14 @@
+.footerBtm{
+	padding-left: 50px;
+	padding-right:50px;
+	border-top: 2px solid #00253f;
+	border-bottom: 2px solid #00253f;
+}
+.footerBtm ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 2em;
+}
+.footerBtm ul li a{
+	padding: 10px 20px;
+}
