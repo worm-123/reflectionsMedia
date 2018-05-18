@@ -110,7 +110,7 @@ echo '<div class="bs-example">
                                         <td><a href="forms.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>
                                         <a href="allShows.php?deleteId=<?php echo base64_encode($row['id']); ?>" class="btn btn-danger"  onclick="return confirm('Are you sure want to delete this?');">Delete</a></td>
                                         <td><?php echo $row['play_name']; ?></td>
-                                        <td><img scr='../../media/img/<?php echo $row['small_img']; ?>' height="80">   </td>
+                                        <td><img src='../../media/img/<?php echo $row['small_img']; ?>' height="80">   </td>
                                         <td> <?php echo $row['duration']; ?>   </td>
                                         <td> <?php echo $row['time']; ?>   </td>
                                         <td><?php echo $row['director']; ?></td>

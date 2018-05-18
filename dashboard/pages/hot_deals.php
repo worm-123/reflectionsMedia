@@ -31,6 +31,9 @@ if(isset($_POST['submit'])){
   $insert=mysqli_query($link, $sql);
 
   if($insert) {
+     $urlPath=$_SERVER['PHP_SELF'];
+      $queryString=$_SERVER['QUERY_STRING'];
+      header('Location: '.$urlPath.'?'.$queryString);
     echo "Saved Successfully";
   } else {
     echo "Not Saved! Try Again";
@@ -89,7 +92,7 @@ echo '<div class="bs-example">
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Deals Occasion</label>
-                                            <input class="form-control" name="deals" placeholder="Enter price">
+                                            <input class="form-control" name="deals" placeholder="Enter deals" value="<?php echo @$row['deals']; ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>Small Image</label>

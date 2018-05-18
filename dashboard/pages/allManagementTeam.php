@@ -2,7 +2,7 @@
  require_once('../../config/database.php'); 
  if(!!@$_GET['deleteId']){
  $getId= base64_decode($_GET['deleteId']);
- $sql="DELETE FROM `about_us` WHERE `id`='$getId'";
+ $sql="DELETE FROM `management_team` WHERE `id`='$getId'";
  $insert=mysqli_query($link, $sql);
 
   if($insert) {
@@ -68,14 +68,14 @@ echo '<div class="bs-example">
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">About Us</h1>
+                    <h1 class="page-header">Theatre Shows</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default" style="width: 1000px">
+                    <div class="panel panel-default" style="width: 1100px">
                         <div class="panel-heading">
                             All Theatre Shows with Date Filter 
                         </div>
@@ -84,25 +84,33 @@ echo '<div class="bs-example">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th width="8%">Action</th>
-                                        <th width="8%">Heading</th>
-                                        <th width="6%">Descriptions</th>
-                                        
+                                        <th width="20%">Action</th>
+                                        <th width="5%">S. no.</th>
+                                        <th width="10">Name</th>
+                                        <th width="8%"> Designation</th>
+                                        <th width="30%">Description</th>
+                                        <th width="10 %">Profile Pic</th>
+                                        <th width="17">Uploaded Date</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php 
-                                        $sql="SELECT  * FROM  `about_us` ORDER BY `id` DESC";
+                                        $sql="SELECT  * FROM  `management_team` ORDER BY `id` DESC";
                                         $loginQuery=mysqli_query($link, $sql);
+                                        $i=1;
                                         while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                     ?>
                                     <tr class="even gradeC">
-                                        <td><a href="forms.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>
-                                        <a href="allAbout.php?deleteId=<?php echo base64_encode($row['id']); ?>" class="btn btn-danger"  onclick="return confirm('Are you sure want to delete this?');">Delete</a></td>
-                                        <td><?php echo $row['heading']; ?></td>
-                                        <td><?php echo $row['description']; ?>    </td>
+                                        <td><a href="managementTeam.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>
+                                        <a href="allManagementTeam.php?deleteId=<?php echo base64_encode($row['id']); ?>" class="btn btn-danger"  onclick="return confirm('Are you sure want to delete this?');">Delete</a></td>
+                                        <td><?php echo $i ?></td>
+                                        <td><?php echo $row['name']; ?></td>
+                                        <td> <?php echo $row['designation']; ?>   </td>
+                                        <td><div style="height: 100px; overflow-y:scroll; overflow-x:hidden; "><?php echo $row['description']; ?></div></td>
+                                        <td><img src='../../media/img/<?php echo $row['profile_img']; ?>' height="80">   </td>
+                                        <td><?php echo $row['uploadedDate']; ?>    </td>
                                     </tr>
-                                   <?php } ?>
+                                   <?php $i++; } ?>
                                 </tbody>
                             </table>
                         </div>
