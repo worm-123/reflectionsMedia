@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_media.php');
+require_once('header-media.php');
 ?>
 <div class="container-fluid">
     <div class="row">

@@ -66,7 +66,7 @@ s0.parentNode.insertBefore(s1,s0);
 									<div class="entertainment"><span class="entmnt-mrgn">ENTERTAINMENT</span></div>
 								</div>
 							</a>
-							<a href="view/reflectionHospitality.php">
+							<a href="view/reflection-hospitality.php">
 								<div class="main_menu_two">
 									<div class="hospitality"><span class="hsptlty-mrgn">HOSPITALITY</span></div>
 								</div>

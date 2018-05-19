@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -51,7 +51,7 @@ require_once('header_threatre.php');
                         <div class="pull-left navigationTxt"><span class="border margin-top-10">BANQUET NAME 1</span></div>
                         <div class="pull-right"><h5 class="text-center text-blue"><b>Write a Review</b></h5></div>
                         <img src="../media/img/banquetside1.png" class="img-responsive" style="width:100%">
-                        <a href="banquetsFirstSide.php?name=first" class="btn button mt-35 center">VIEW DETAILS</a>
+                        <a href="banquets-first-side.php?name=first" class="btn button mt-35 center">VIEW DETAILS</a>
                     </div>
                     <div class="col-sm-6">
                         <div class="pull-left navigationTxt"><span class="border margin-top-10">BANQUET NAME 2</span></div>

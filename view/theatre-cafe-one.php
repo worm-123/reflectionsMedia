@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 ?>
 <div class="container">
     <div class='col-md-12'>
@@ -8,7 +8,7 @@ require_once('header_threatre.php');
     	<span class="nowPlaying "> NOW PLAYING</span>
 	    <ul class="topBtnheaderVideo nav navbar-nav pull-right">
     		<li class=""><a href="#"><span class="topTxt">VIEW FOOD MENU</span></a></li>
-    		<li class=""><a href="theatreCafeSelectaDate.php"><span class="topTxt">GO FOR BOOKING</span></a></li>
+    		<li class=""><a href="theatre-cafe-selecta-date.php"><span class="topTxt">GO FOR BOOKING</span></a></li>
         </ul>
     </div>
      <div id="thumbnail-slider">
@@ -39,7 +39,7 @@ require_once('header_threatre.php');
 					  Your browser does not support HTML5 video.
 					</video>
 					</div >
-                    <a class="btn button" href="theatreCafeShowBooking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a>
+                    <a class="btn button" href="theatre-cafe-show-booking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a>
                 </li>
             <?php } ?>
             </ul>
@@ -80,7 +80,7 @@ require_once('header_threatre.php');
                       Your browser does not support HTML5 video.
                     </video>
                     </div >
-                    <a class="btn button" href="theatreCafeShowBooking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a>
+                    <a class="btn button" href="theatre-cafe-show-booking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a>
                 </li>
             <?php } ?>
             </ul>

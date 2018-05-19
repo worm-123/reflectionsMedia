@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 
 ?>
 <div class="container-fluid">
@@ -138,7 +138,7 @@ require_once('header_threatre.php');
 			    				<small class="priceTxt"><strong>&#x20B9;<?php echo $row['price']?></strong></small><br/>
 			    				<small class="">(Inc. all taxes)</small></span>
 			    				
-			    				<a href="theatreCafeShowBooking.php?id=<?php echo base64_encode($row['id']) ?>" class="btn button pull-right">BOOK NOW</a>
+			    				<a href="theatre-cafe-show-booking.php?id=<?php echo base64_encode($row['id']) ?>" class="btn button pull-right">BOOK NOW</a>
 		    				</p>
 		    				<div class="pull-left">
 		    					<ul class="list-unstyled">

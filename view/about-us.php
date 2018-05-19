@@ -191,15 +191,15 @@ s0.parentNode.insertBefore(s1,s0);
 			                </div>
 			                <div id="navbar" class="navbar-collapse collapse menuCsRes">
 			                	<ul class="topBtn nav navbar-nav pull-right">
-			                		<li class=""><a href="hotDeals.php"><span class="topTxt">HOT DEALS</span></a></li>
+			                		<li class=""><a href="hot-deals.php"><span class="topTxt">HOT DEALS</span></a></li>
 			                					                		<li class=""><a href="#myModal" data-toggle="modal"><span class="topTxt">SIGN IN</span></a></li>
 			                					                    </ul>
 			                    <ul class="nav navbar-nav reslics pull-right">
 			                        <li class="active dropdown">
 			                        	<a href="#" ss="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
 			                        	<ul class="dropdown-menu">
-			                                <li><a href="aboutUs.php">About Reflection</a></li>
-			                                <li><a href="community.php">Key Personnel </a></li>
+			                                <li><a href="about-us.php">About Reflection</a></li>
+			                                <li><a href="key-personal.php">Key Personnel </a></li>
 			                                
 
 			                            </ul>
@@ -208,7 +208,7 @@ s0.parentNode.insertBefore(s1,s0);
 			                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOSPITALITY </a>
 			                            <ul class="dropdown-menu">
 			                                <li><a href="#">AMPHI THEATRE</a></li>
-			                                <li><a href="theatreCafeOne.php"> REFLECTIONS THEATRE CAFE</a></li>
+			                                <li><a href="theatre-cafe-one.php"> REFLECTIONS THEATRE CAFE</a></li>
 			                                <li><a href="banquets.php">BANQUETS</a></li>
 			                                <li><a href="#">SPEAK EASY BAR</a></li>
 
@@ -309,16 +309,16 @@ s0.parentNode.insertBefore(s1,s0);
 			<div class="footerBtm text-center ">
 				<ul>
 					<li class="footormenu"><a href="career.php" title="Careers"> Careers</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="groupPartners.php" title="Group Partners">  Group Partners </a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="group-partners.php" title="Group Partners">  Group Partners </a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="Affiliates.php" title="Affiliates"> Affiliates</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="investors.php" title="Investors"> Investors</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="#" title="Community"> Community</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="privacyPolicy.php" title="Privacy Policy"> Privacy Policy</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="turmsOfUse.php" title="Terms of Use"> Terms of Use</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="corporateInformations.php" title="Corporate Information"> Corporate Information</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="privacyAndCookies.php" title="Privacy & Cookie Statement"> Privacy & Cookie Statement</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="privacy-policy.php" title="Privacy Policy"> Privacy Policy</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="turms-of-use.php" title="Terms of Use"> Terms of Use</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="corporate-informations.php" title="Corporate Information"> Corporate Information</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="privacy-and-cookies.php" title="Privacy & Cookie Statement"> Privacy & Cookie Statement</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="sitemap.php" title="Sitemap"> Sitemap</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="cookiesStatement.php" title="Cookie Statement"> Cookie Statement</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="cookies-statement.php" title="Cookie Statement"> Cookie Statement</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="faq.php" title="FAQs"> FAQs</a></li>
 				</ul>
 			</div>

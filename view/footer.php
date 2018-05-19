@@ -4,16 +4,16 @@
 			<div class="footerBtm text-center ">
 				<ul>
 					<li class="footormenu"><a href="career.php" title="Careers"> Careers</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="groupPartners.php" title="Group Partners">  Group Partners </a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="group-partners.php" title="Group Partners">  Group Partners </a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="Affiliates.php" title="Affiliates"> Affiliates</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="investors.php" title="Investors"> Investors</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="#" title="Community"> Community</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="privacyPolicy.php" title="Privacy Policy"> Privacy Policy</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="turmsOfUse.php" title="Terms of Use"> Terms of Use</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="corporateInformations.php" title="Corporate Information"> Corporate Information</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="privacyAndCookies.php" title="Privacy & Cookie Statement"> Privacy & Cookie Statement</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="privacy-policy.php" title="Privacy Policy"> Privacy Policy</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="turms-of-use.php" title="Terms of Use"> Terms of Use</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="corporate-informations.php" title="Corporate Information"> Corporate Information</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="privacy-and-cookies.php" title="Privacy & Cookie Statement"> Privacy & Cookie Statement</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="sitemap.php" title="Sitemap"> Sitemap</a><span class="rightline">|</span></li>
-					<li class="footormenu"><a href="cookiesStatement.php" title="Cookie Statement"> Cookie Statement</a><span class="rightline">|</span></li>
+					<li class="footormenu"><a href="cookies-statement.php" title="Cookie Statement"> Cookie Statement</a><span class="rightline">|</span></li>
 					<li class="footormenu"><a href="faq.php" title="FAQs"> FAQs</a></li>
 				</ul>
 			</div>

@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 ?>
 
 <div class="container-fluid">
@@ -279,7 +279,7 @@ require_once('header_threatre.php');
 	    		};
 	    		$.ajax({
 					type : "POST",
-					url : 'billPayment.php',
+					url : 'bill-payment.php',
 					dataType : "text",
 					contentType: "application/json",
 					data : JSON.stringify(sendData),

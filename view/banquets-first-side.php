@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -151,7 +151,7 @@ $(document).ready(function() {
         if(banquetsDate === null || banquetsDate === undefined || banquetsDate ===''){
             alert("Please select date.")
         }else{
-            location.href="banquetsBooking.php?date="+banquetsDate + "&name="+ banquetsNameURL;
+            location.href="banquets-booking.php?date="+banquetsDate + "&name="+ banquetsNameURL;
         }
     });
 });

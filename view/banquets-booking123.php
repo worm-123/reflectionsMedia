@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_threatre.php');
+require_once('header-threatre.php');
 ?>
 
 <div class="container-fluid">
@@ -40,7 +40,7 @@ require_once('header_threatre.php');
 				      	<option value="19:00 - 23:30"><time>19:00 - 23:30</time></option>
 				      	<option value="19:00 - 23:30"><time>19:00 - 23:30</time></option>
 				      </select></td>
-				      <td width="50%" colspan="2"><span class="pull-right">Date: <span id="bookingDate"><?php echo $date ?></span></span></td>
+				      <td width="50%" colspan="2"><span class="pull-right">Date: <?php echo $date ?></span></td>
 				    </tr>
 				    <tr>
 				    	<td colspan="4">Engter No. of guests:
@@ -92,7 +92,7 @@ require_once('header_threatre.php');
 				      <td width="25%">
 				        <label class="container1">
 			    			<small>click to add</small> 
-						  <input type="radio" name="banquet" class="vegFood" value="<?php echo $row['veg_food'] ?>" data-label="Veg Food">
+						  <input type="radio" name="banquet" class="vegFood" value="<?php echo $row['veg_food'] ?>">
 						  <span class="checkmark"></span>
 						 </label>
 				      </td>
@@ -106,7 +106,7 @@ require_once('header_threatre.php');
 				      <td width="25%">
 				        <label class="container1">
 			    			<small>click to add</small>
-						  <input type="radio" class="nonVegFood" name="banquet" value="<?php echo $row['nonveg_food'] ?>" data-label="Non-Veg Food">
+						  <input type="radio" class="nonVegFood" name="banquet" value="<?php echo $row['nonveg_food'] ?>">
 						  <span class="checkmark"></span>
 						 </label>
 				      </td>
@@ -121,7 +121,7 @@ require_once('header_threatre.php');
 				      <td width="25%">
 				        <label class="container1">
 			    			<small>click to add</small>
-						  <input type="radio" name="banquet" class="indLiquor" value="<?php echo $row['indian_liquor'] ?>" data-label="Indian Liquor" >
+						  <input type="radio" name="banquet" class="indLiquor" value="<?php echo $row['indian_liquor'] ?>">
 						  <span class="checkmark"></span>
 						 </label>
 				      </td>
@@ -135,7 +135,7 @@ require_once('header_threatre.php');
 				      <td width="25%">
 				        <label class="container1">
 			    			<small>click to add</small>
-						  <input type="radio" class="importedLiquor" name="banquet" value="<?php echo $row['imported_liquor'] ?>" data-label="Imported Liquor">
+						  <input type="radio" class="importedLiquor" name="banquet" value="<?php echo $row['imported_liquor'] ?>">
 						  <span class="checkmark"></span>
 						 </label>
 				      </td>
@@ -193,87 +193,16 @@ require_once('header_threatre.php');
 			</div>
 			<div class="col-md-12">
 				<div class="text-center reviewBooking">
-					<button data-target="#billConfirmation" data-toggle="modal" id="storeAllFieldValue" class="btn button">REVIEW BOOKING</but
+					<a href="javascript:void(0)" data-toggle="modal" id="storeAllFieldValue" class="btn button">REVIEW BOOKING</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<!-- Bill Confirmaation -->
-<div class="modal fade" id="banquetsBillConfirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">BOOKING REVIEW</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="booking_option">
-        <table class="table table-dark text-center">
-          <tbody>
-            <tr>
-              <td width="50%" class="text-right">Banquet Name</td>
-              <td width="50%" class="text-left">: <span id="banquetName"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Slot
-              </td>
-              <td width="50%" class="text-left">: <span id="time"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Date
-              </td>
-              <td width="50%" class="text-left">: <span id="date"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                No. of Guests
-              </td>
-              <td width="50%" class="text-left">: <span id="guest"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Decoration
-              </td>
-              <td width="50%" class="text-left">: <span id="decoration"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Hall
-              </td>
-              <td width="50%" class="text-left">: <span id="hall"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Ticket type
-              </td>
-              <td width="50%" class="text-left">: <span id="ticketType"></span></td>
-            </tr>
-            <tr>
-              <td width="50%" class="text-right">
-                Amout to Pay
-              </td>
-              <td width="50%" class="text-left">: <span id="amounttlt"></span></td>
-            </tr>
-             <tr><td colspan="2"><button type="button" class="btn button" id="proceedToPay">PROCEED TO PAY</button></td></tr>
-            <tr><td colspan="2"><small><i>* This ticket/booking is not refundable/transferrable as per terms and conditions.</i></small></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end-->
-
 <?php require_once('footer.php');?>
 <script type="text/javascript">
 	$(document).ready(function(){
 		var gVal=0;
-		var getLabel='';
 		$("#checkedHall").click(function(){
 			if($('#checkedHall').is(':checked')){
 				var hallprice= $('#hallprice').val();
@@ -322,7 +251,6 @@ require_once('header_threatre.php');
 
 		$(".indLiquor").click(function(){
 			var checkedValue =$('.indLiquor:checked').val();
-			getLabel=$(this).attr('data-label');
 			$('#checkedValueInd').html(checkedValue);
 			$('#vegFoodVal').html("0");	
 			$('#nonVegFood').html("0");	
@@ -346,7 +274,6 @@ require_once('header_threatre.php');
 		});
 		$(".vegFood").click(function(){
 			var vegFoodVal =$('.vegFood:checked').val();
-			getLabel=$(this).attr('data-label');
 			$('#vegFoodVal').html(vegFoodVal);
 			$('#nonVegFood').html("0");	
 			$('#importedLiquor').html("0");
@@ -369,7 +296,6 @@ require_once('header_threatre.php');
 		});
 		$(".nonVegFood").click(function(){
 			var nonVegFood =$('.nonVegFood:checked').val();
-			getLabel=$(this).attr('data-label');
 			$('#nonVegFood').html(nonVegFood);
 			$('#importedLiquor').html("0");
 			$('#checkedValueInd').html("0");
@@ -392,7 +318,6 @@ require_once('header_threatre.php');
 		});
 		$(".importedLiquor").click(function(){
 			var importedLiquor =$('.importedLiquor:checked').val();
-			getLabel=$(this).attr('data-label');
 			$('#importedLiquor').html(importedLiquor);	
 			$('#checkedValueInd').html("0");
 			$('#vegFoodVal').html("0");
@@ -414,145 +339,6 @@ require_once('header_threatre.php');
 			$("#payAmount").html(totalAmout);
 		});
 		//var totalAmout=parseInt(decorationPrice + hallprice + vegFoodVal + nonVegFood + importedLiquor + checkedValue)
-		$('#storeAllFieldValue').on('click',function(){
-			var noOfGuest= $('#noOfGuest').val();
-			if(gVal !== 0 && noOfGuest !== 0){
-				var getBanquetName='first',
-					hall= $('#hallprice').val(),
-					decoration=$('#decorationPrice').val(),
-					type=gVal,
-					noOfGuest=noOfGuest,
-					bookingDate=$('#bookingDate').text(),
-					slot=$('#showTime').val(),
-					totalAmount=$("#totalAmount").text(),
-					payAmount=$("#payAmount").text();
-
-				$('#amount').html(totalAmount);
-				$('#amountPay').html(payAmount);
-				$('#amounttlt').html( payAmount);
-				$('#guest').html(noOfGuest);
-				$('#time').html(slot);
-				$('#date').html(bookingDate);
-				$('#banquetName').html(getBanquetName);
-				$('#decoration').html(decoration);
-				$('#hall').html(hall);
-				$('#ticketType').html(getLabel);
-
-				$('#banquetsBillConfirmation').modal({
-			        show: 'true'
-			    });
-			}else{
-				alert("Please fill options & no. of guest");
-			}
-		});
-		$('#proceedToPay').click(function(){
-    		function getCookie(name)
-	 		{
-			    var re = new RegExp(name + "=([^;]+)");
-			    var value = re.exec(document.cookie);
-			    return (value != null) ? unescape(value[1]) : null;
-		  	}
-		  	var username=getCookie("username");
-
-		  	if(!!username){
-
-	    		var sendData={
-	    			banquetName:$('#banquetName').text(),
-	    			time:$('#time').text(),
-	    			date:$('#date').text(),
-	    			noOfGuest:$('#guest').text(),
-	    			ticketType:$('#ticketType').text(),
-	    			amountToPay:$('#amounttlt').text(),
-	    			decoration: (!!$('#decoration').text()) ? $('#decoration').text():'',
-					hall:(!!$('#hall').text()) ? $('#hall').text():'',
-	    			userId:username
-	    		};
-				$.ajax({
-					type : "POST",
-					url : 'banquetPayment.php',
-					dataType : "text",
-					contentType: "application/json",
-					data : JSON.stringify(sendData),
-					success : function(data) {
-						data=JSON.parse(data);
-						if(data.status === 1){
-						var d = new Date().getTime();
-						var input=''; //Creating input field variable;
-						var form = $(document.createElement('form'));
-						$(form).attr("action", "../PHP_Kit/payment_gateway/ccavRequestHandler.php");
-						$(form).attr("name", "customerData");
-						$(form).attr("method", "POST");
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "tid")
-						    .val(d);
-
-						$(form).append($(input));
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "merchant_id")
-						    .val("164164");
-
-						$(form).append($(input));
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "order_id")
-						    .val(data.booking_id);
-
-						$(form).append($(input));
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "amount")
-						    .val(sendData.amountToPay);
-
-						$(form).append($(input));
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "currency")
-						    .val("INR");
-
-						$(form).append($(input));
-						
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "redirect_url")
-						    .val("http://reflectionsmedia.in/PHP_Kit/payment_gateway/ccavResponseHandler.php");
-
-						$(form).append($(input));
-
-						input = $("<input>")
-							.attr("type", "hidden")
-						    .attr("name", "cancel_url")
-						    .val("http://reflectionsmedia.in");
-
-						$(form).append($(input));
-
-
-						form.appendTo( document.body )
-
-						$(form).submit();
-					   }else{
-					   	console.log("error");
-					   }
-					},
-					error : function(error) {
-						console.log(error);
-					}
-				});
-			}else{
-				if(confirm('Please Login')){
-					$('#banquetsBillConfirmation').modal('hide');;
-				    $('#myModal').modal({
-				        show: 'false'
-				    });   
-				}
-			}
-    	});
 
 	});
 </script>

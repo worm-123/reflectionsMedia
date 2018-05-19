@@ -1,6 +1,6 @@
 <?php 
 require_once('../config/database.php');
-require_once('header_media.php');
+require_once('header-media.php');
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -38,20 +38,20 @@ require_once('header_media.php');
                        <div id="cont">
                             <ul class="level-0" style="margin-left: 30px;">
                                         
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflectionEntertainment.php" title="http://flyingarrow.in/WebReflections/view/reflectionEntertainment.php">http://flyingarrow.in/WebReflections/view/reflectionEntertainment.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflectionHospitality.php" title="http://flyingarrow.in/WebReflections/view/reflectionHospitality.php">http://flyingarrow.in/WebReflections/view/reflectionHospitality.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflectionEvents.php" title="http://flyingarrow.in/WebReflections/view/reflectionEvents.php">http://flyingarrow.in/WebReflections/view/reflectionEvents.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/hotDeals.php" title="http://flyingarrow.in/WebReflections/view/hotDeals.php">http://flyingarrow.in/WebReflections/view/hotDeals.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/aboutUs.php" title="http://flyingarrow.in/WebReflections/view/aboutUs.php">http://flyingarrow.in/WebReflections/view/aboutUs.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatreCafeOne.php" title="http://flyingarrow.in/WebReflections/view/theatreCafeOne.php">http://flyingarrow.in/WebReflections/view/theatreCafeOne.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/community.php" title="http://flyingarrow.in/WebReflections/view/community.php">http://flyingarrow.in/WebReflections/view/community.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflection-entertainment.php" title="http://flyingarrow.in/WebReflections/view/reflection-entertainment.php">http://flyingarrow.in/WebReflections/view/reflection-entertainment.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflection-hospitality.php" title="http://flyingarrow.in/WebReflections/view/reflection-hospitality.php">http://flyingarrow.in/WebReflections/view/reflection-hospitality.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/reflection-events.php" title="http://flyingarrow.in/WebReflections/view/reflection-events.php">http://flyingarrow.in/WebReflections/view/reflection-events.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/hot-deals.php" title="http://flyingarrow.in/WebReflections/view/hot-deals.php">http://flyingarrow.in/WebReflections/view/hot-deals.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/about-us.php" title="http://flyingarrow.in/WebReflections/view/about-us.php">http://flyingarrow.in/WebReflections/view/about-us.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatre-cafe-one.php" title="http://flyingarrow.in/WebReflections/view/theatre-cafe-one.php">http://flyingarrow.in/WebReflections/view/theatre-cafe-one.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/key-personal.php" title="http://flyingarrow.in/WebReflections/view/key-personal.php">http://flyingarrow.in/WebReflections/view/key-personal.php</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/blog.php" title="http://flyingarrow.in/WebReflections/view/blog.php">http://flyingarrow.in/WebReflections/view/blog.php</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/career.php" title="http://flyingarrow.in/WebReflections/view/career.php">http://flyingarrow.in/WebReflections/view/career.php</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/contact.php" title="http://flyingarrow.in/WebReflections/view/contact.php">http://flyingarrow.in/WebReflections/view/contact.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatreCafeSelectaDate.php" title="http://flyingarrow.in/WebReflections/view/theatreCafeSelectaDate.php">http://flyingarrow.in/WebReflections/view/theatreCafeSelectaDate.php</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTM=" title="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTM=">http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTM=</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTQ=" title="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTQ=">http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTQ=</a></li>
-                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTU=" title="http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTU=">http://flyingarrow.in/WebReflections/view/theatreCafeShowBooking.php?id=MTU=</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatre-cafe-selecta-date.php" title="http://flyingarrow.in/WebReflections/view/theatre-cafe-selecta-date.php">http://flyingarrow.in/WebReflections/view/theatre-cafe-selecta-date.php</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTM=" title="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTM=">http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTM=</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTQ=" title="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTQ=">http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTQ=</a></li>
+                            <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTU=" title="http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTU=">http://flyingarrow.in/WebReflections/view/theatre-cafe-show-booking.php?id=MTU=</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/blog.php?page=1" title="http://flyingarrow.in/WebReflections/view/blog.php?page=1">http://flyingarrow.in/WebReflections/view/blog.php?page=1</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/blog.php?page=2" title="http://flyingarrow.in/WebReflections/view/blog.php?page=2">http://flyingarrow.in/WebReflections/view/blog.php?page=2</a></li>
                             <li class="lpage"><a href="http://flyingarrow.in/WebReflections/view/blog.php?page=3" title="http://flyingarrow.in/WebReflections/view/blog.php?page=3">http://flyingarrow.in/WebReflections/view/blog.php?page=3</a></li>

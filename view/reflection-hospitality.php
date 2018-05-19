@@ -44,7 +44,7 @@
 			</div>
 			<div class="container noGap">
 				<div class="container_full backScreen noGap full_width hospitalityPageContainer">
-					<a href="theatreCafeOne.php">
+					<a href="theatre-cafe-one.php">
 						<div class="main_menu_oneTheater">
 							<div class="entertainment hosPage">
 							<span class="txtTheater">REFLECTION<br/>THEATRE <br/>CAFE</span></div>
