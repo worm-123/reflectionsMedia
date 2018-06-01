@@ -97,7 +97,7 @@ echo '<div class="bs-example">
                                         while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                     ?>
                                     <tr class="even gradeC">
-                                        <td><a href="forms.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>
+                                        <td><a href="aboutUs.php?editId=<?php echo base64_encode($row['id']); ?>" class="btn btn-primary">Edit</a>
                                         <a href="allAbout.php?deleteId=<?php echo base64_encode($row['id']); ?>" class="btn btn-danger"  onclick="return confirm('Are you sure want to delete this?');">Delete</a></td>
                                         <td><?php echo $row['heading']; ?></td>
                                         <td><?php echo $row['description']; ?>    </td>

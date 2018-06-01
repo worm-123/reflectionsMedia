@@ -28,8 +28,13 @@
     <div id="wrapper">
         <div class="container-fluid">
             <div class="row">
+                <div class="navbar-header" style="margin: 5px 0px 0px 20px ">
+                    <a href="#">
+                        <img src="../../media/img/theater.png" alt="" title="" height="80">
+                    </a>
+                </div>
                 <div class="col-lg-12">
-                    <h1 class="text-center">TICKET VERIFICATION</h1>
+                    <h1 class="text-center"></h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -38,7 +43,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Search Result
+                            Ticket Verification(V2.0) :- Search Result
                         </div>
 
                         <!-- /.panel-heading -->
@@ -55,7 +60,7 @@
                                 </thead>
                                 <tbody>
                                     <?php 
-                                        $sql="select * from signup";
+                                        $sql="select * from show_ticket_booking where booking_status =0";
                                         $loginQuery=mysqli_query($link, $sql);
                                         while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                                     ?>

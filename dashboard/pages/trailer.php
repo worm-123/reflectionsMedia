@@ -1,15 +1,23 @@
 <?php
  require_once('../../config/database.php'); 
-
 if(isset($_POST['submit'])){
     $play_id=$_REQUEST['play_id'];
     $fromDate=$_REQUEST['fromDate'];
     $toDate=$_REQUEST['toDate'];
     $video=$_FILES["video"]["name"];
     $folder="../../media/video/";
-    move_uploaded_file($_FILES["video"]["tmp_name"] , "$folder".$video);
 
-  $sql ="UPDATE `theatre_cafe` SET `video`='$video', `fromDate`='$fromDate', `toDate`='$toDate' WHERE id='$play_id'";
+    $mydate=getdate(date("U"));
+    $dateFormated="$mydate[mday] $mydate[month], $mydate[year] $mydate[weekday]";
+
+    if($video!="") {
+       move_uploaded_file($_FILES["video"]["tmp_name"] , "$folder".$video);
+
+        $sql ="UPDATE `theatre_cafe` SET `video`='$video', `uploadedDate`='$dateFormated',`fromDate`='$fromDate', `toDate`='$toDate' WHERE id='$play_id'";
+    }else{
+        $sql ="UPDATE `theatre_cafe` SET `uploadedDate`='$dateFormated',`fromDate`='$fromDate', `toDate`='$toDate' WHERE id='$play_id'";
+    }
+    
 
   $insert=mysqli_query($link, $sql);
 

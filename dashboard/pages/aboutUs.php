@@ -10,13 +10,13 @@ if(!!@$_GET['editId']){
 if(isset($_POST['submit'])){
     $heading=$_REQUEST['heading'];
     $description=$_REQUEST['description'];
-    $description=preg_replace("/[^a-zA-Z]/", " ", $description);
+    $description=addslashes($description);
     
 
     $mydate=getdate(date("U"));
     $dateFormated="$mydate[mday] $mydate[month], $mydate[year] $mydate[weekday]";
     if(!!@$_GET['editId']){
-        $sql= "UPDATE `about_us` SET `heading`=$heading,`description`=$description,`uploadedDate`=$dateFormated WHERE `id`=$getEditid";
+        $sql= "UPDATE `about_us` SET `heading`='$heading',`description`='$description',`uploadedDate`='$dateFormated' WHERE `id`='$getEditid'";
          
     }else{
         $sql ="INSERT INTO `about_us`(`id`, `heading`, `description`, `uploadedDate`) VALUES ('', '$heading', '$description', '$dateFormated')";
@@ -25,8 +25,8 @@ if(isset($_POST['submit'])){
   $insert=mysqli_query($link, $sql);
 
   if($insert) {
-    header('Location: '.$_SERVER['PHP_SELF']);
-     $msg= "Saved Successfully";
+    header('location: allAbout.php');
+    $msg= "Saved Successfully";
   } else {
     $msg= "Not Saved! Try Again";
   }
