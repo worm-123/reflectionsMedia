@@ -104,7 +104,7 @@ s0.parentNode.insertBefore(s1,s0);
 			                        <li class="active dropdown">
 			                        	<a href="#" ss="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT </a>
 			                        	<ul class="dropdown-menu">
-			                                <li><a href="about-us.php">About Reflection</a></li>
+			                                <li><a href="about-us.php">About Reflections</a></li>
 			                                <li><a href="key-personal.php">Key Personnel </a></li>
 			                                
 

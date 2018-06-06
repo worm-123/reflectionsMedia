@@ -92,7 +92,7 @@ s0.parentNode.insertBefore(s1,s0);
 			                                <span class="profileImg"><i class="glyphicon glyphicon-th-list"></i></span><a href="booking-history.php" class="" style="display: inline-block;">Booking History</a>
 											</li>
 											<li>
-			                                <span class="profileImg"><i class="glyphicon glyphicon-log-out"></i></span><a href="signout.php" class="" style="display: inline-block;">Sign Out</a>
+			                                <span class="profileImg"><i class="glyphicon glyphicon-log-out"></i></span><a href="view/signout.php" class="" style="display: inline-block;">Sign Out</a>
 											</li>
 			                            </ul>
 			                        </li>
@@ -102,8 +102,8 @@ s0.parentNode.insertBefore(s1,s0);
 			                        <li class="active dropdown">
 			                        	<a href="#" ss="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT </a>
 			                        	<ul class="dropdown-menu">
-			                                <li><a href="about-us.php">About Reflection</a></li>
-			                                <li><a href="key-personal.php">Key Personnel </a></li>
+			                                <li><a href="view/about-us.php">About Reflections</a></li>
+			                                <li><a href="view/key-personal.php">Key Personnel </a></li>
 			                                
 
 			                            </ul>
@@ -112,8 +112,8 @@ s0.parentNode.insertBefore(s1,s0);
 			                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOSPITALITY </a>
 			                            <ul class="dropdown-menu">
 			                                <li><a href="#">AMPHI THEATRE</a></li>
-			                                <li><a href="theatre-cafe-one.php"> REFLECTIONS THEATRE CAFE</a></li>
-			                                <li><a href="banquets.php">BANQUETS</a></li>
+			                                <li><a href="view/theatre-cafe-one.php"> REFLECTIONS THEATRE CAFE</a></li>
+			                                <li><a href="view/banquets.php">BANQUETS</a></li>
 			                                <li><a href="#">SPEAK EASY BAR</a></li>
 
 			                            </ul>
@@ -134,9 +134,9 @@ s0.parentNode.insertBefore(s1,s0);
 			                        <li class=" down"><a href="#">COMMUNITY </a>
 			                        </li>
 			                        <li><a href="#">WORKSHOPS</a></li>
-			                        <li><a href="blog.php">BLOG</a></li>
-			                        <li><a href="career.php">CAREERS</a></li>
-			                        <li><a href="contact.php">CONTACT US</a></li>
+			                        <li><a href="view/blog.php">BLOG</a></li>
+			                        <li><a href="view/career.php">CAREERS</a></li>
+			                        <li><a href="view/contact.php">CONTACT US</a></li>
 			                    </ul>
 			                </div>
 				        </nav>

@@ -141,7 +141,7 @@ require_once('header-threatre.php');
 				    <tr>
 				    	<td colspan="3">
 				    		<label class="container2">
-				    			I understant and accept <a href="#">term & condition</a> and <a href="#">privacy policy</a>
+				    			I understand and accept <a href="#termsCondition" data-toggle="modal">term & condition</a> and <a href="#PrivacyPolicy" data-toggle="modal" >privacy policy</a>
 							  <input type="checkbox" checked="checked" name="agree" required="required">
 							  <span class="checkmark2"></span>
 							</label>
@@ -217,6 +217,59 @@ require_once('header-threatre.php');
       </div>
     </div>
   </div>
+</div>
+<!-- end-->
+
+
+
+<!-- termsCondition -->
+<div class="modal fade" id="termsCondition" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Terms & Conditions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="booking_option">
+        <div class="textaliment">
+            <ul>
+	            <li><b>1.1.</b> By using our website, you accept these terms and conditions in full; accordingly, if you disagree with these terms and conditions or any part of these terms and conditions, you must not use our website.</li>
+	             <li><b>1.2. </b> If you [register with our website, submit any material to our website or use any of our website services], we will ask you to expressly agree to these terms and conditions.</li>
+	             <li><b> 1.3.</b>You must be at least [18] years of age to use our website; by using our website or agreeing to these terms and conditions, you warrant and represent to us that you are at least [18] years of age.</li>
+	             <li><b> 1.4.</b>	Our website uses cookies; by using our website or agreeing to these terms and conditions, you consent to our use of cookies in accordance with the terms of our [privacy and cookies policy].</li>          
+            </ul>
+            <i>*For more details, please click <a href="turms-of-use.php" style="text-transform: none; color: #444">Terms of use</a></i>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end-->
+
+<!-- PrivacyPolicy -->
+<div class="modal fade" id="PrivacyPolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Privacy Policy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="booking_option">
+        <div class="textaliment">
+           <p>Reflections Media Private Limited operates the www.reflectionsmedia.in website, which provides the SERVICEs of Hospitality and Entertainment.
+			This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+			If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+			The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at , unless otherwise defined in this Privacy Policy
+			</p>
+            <i>*For more details, please click <a href="privacy-policy.php" style="text-transform: none; color: #444">Privacy Policy</a></i>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 <!-- end-->
 
