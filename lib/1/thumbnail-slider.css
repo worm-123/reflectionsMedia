@@ -316,13 +316,12 @@
 #thumbs3 ul li {
     display:inline-block;
     *display:inline!important; /*IE7 hack*/
-    margin:0;
-    margin-right:10px; /* Spacing between thumbs*/
+    margin:0;/* Spacing between thumbs*/
     transition:border-color 0.3s;
     box-sizing:content-box;
     text-align:center;
     vertical-align:middle;
-    padding:0;
+    padding:4px 10px;
     position:relative;
     list-style:none;
     backface-visibility:hidden;

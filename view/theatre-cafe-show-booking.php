@@ -240,7 +240,7 @@ require_once('header-threatre.php');
 	             <li><b> 1.3.</b>You must be at least [18] years of age to use our website; by using our website or agreeing to these terms and conditions, you warrant and represent to us that you are at least [18] years of age.</li>
 	             <li><b> 1.4.</b>	Our website uses cookies; by using our website or agreeing to these terms and conditions, you consent to our use of cookies in accordance with the terms of our [privacy and cookies policy].</li>          
             </ul>
-            <i>*For more details, please click <a href="turms-of-use.php" style="text-transform: none; color: #444">Terms of use</a></i>
+            <i>*For more details, please click <a href="turms-of-use" style="text-transform: none; color: #444">Terms of use</a></i>
       </div>
     </div>
   </div>
@@ -265,7 +265,7 @@ require_once('header-threatre.php');
 			If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 			The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at , unless otherwise defined in this Privacy Policy
 			</p>
-            <i>*For more details, please click <a href="privacy-policy.php" style="text-transform: none; color: #444">Privacy Policy</a></i>
+            <i>*For more details, please click <a href="privacy-policy" style="text-transform: none; color: #444">Privacy Policy</a></i>
       </div>
     </div>
   </div>

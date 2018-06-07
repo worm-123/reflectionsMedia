@@ -16,9 +16,10 @@ require_once('header-threatre.php');
                 <?php 
                 $dayCounter=0;
                 while($dayCounter <= 30){
+                    $matchDate= date('Y-m-d',strtotime("+".$dayCounter."days"));
                 ?>
-                <li>
-                    <a href="theatre-cafe-selecta-date.php?date=<?php echo date('Y-m-d',strtotime("+".$dayCounter."days"));?>">
+                <li style="<?php if(@$_GET['date'] === $matchDate){ echo 'background: #00253f '; } ?>" >
+                    <a href="theatre-cafe-selecta-date.php?date=<?php echo date('Y-m-d',strtotime("+".$dayCounter."days"));?>" data-dateTime="<?php echo $matchDate ?>">
                         <span class="calenderTxt"><?php echo date('Y-M-d',strtotime("+".$dayCounter."days"));
                         $dayCounter++; ?></span>
                     </a>

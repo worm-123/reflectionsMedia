@@ -31,12 +31,12 @@ require_once('header-media.php');
                             <p id="<?php echo $row['id'] ?>" class="collapse text-justify"><?php echo $row['description']; ?></p>
                         </div>
                     </div>
-                    <div class="social-media social_icon">
+                    <div class="social-media ">
                     	<span><a href="#" class="socialLink"><span class="fb"></span></a></span>
-			<span><a href="#" class="socialLink"><span class="tw"></span></a></span>
-			<span><a href="#" class="socialLink"><span class="ig"></span></a></span>
-			<span><a href="#" class="socialLink"><span class="yt"></span></a></span>
-			<span><a href="#" class="socialLink"><span class="li"></span></a></span>
+        			<span><a href="#" class="socialLink"><span class="tw"></span></a></span>
+        			<span><a href="#" class="socialLink"><span class="ig"></span></a></span>
+        			<span><a href="#" class="socialLink"><span class="yt"></span></a></span>
+        			<span><a href="#" class="socialLink"><span class="li"></span></a></span>
 			
                     </div>
                 </div>

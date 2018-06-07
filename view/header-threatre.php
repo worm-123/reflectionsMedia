@@ -56,14 +56,14 @@ s0.parentNode.insertBefore(s1,s0);
 			                    <span class="icon-bar" style="border: 1px solid #00253f"></span>
 			                    </button>
 			                    <div class="logo">
-									<a href="../index.php">
+									<a href="../index">
 										<img src="../media/img/theater.png" alt="" title="">
 									</a>
 								</div>
 			                </div>
 			                <div id="navbar" class="navbar-collapse collapse menuCsRes">
 			                	<ul class="topBtn nav navbar-nav pull-right">
-			                		<li class=""><a href="hot-deals.php"><span class="topTxt">HOT DEALS</span></a></li>
+			                		<li class=""><a href="hot-deals"><span class="topTxt">HOT DEALS</span></a></li>
 			                		<?php 
 			                		if(!isset($_COOKIE['username'])) {
 			                		?>
@@ -83,18 +83,18 @@ s0.parentNode.insertBefore(s1,s0);
 											</li>
 			                                <li>
 			                                <span class="profileImg"><i class="glyphicon glyphicon-user"></i></span>
-			                                	<a href="edit-profile.php" class="" style="display: inline-block;">Edit Profile</a>
+			                                	<a href="edit-profile" class="" style="display: inline-block;">Edit Profile</a>
 											</li>
 											<li>
 			                                <span class="profileImg"><i class="glyphicon glyphicon-print"></i></span>
 			                                	
-			                                	<a href="print-tkt.php" class="" style="display: inline-block;">Print Ticket</a>
+			                                	<a href="print-tkt" class="" style="display: inline-block;">Print Ticket</a>
 											</li>
 											<li>
-			                                <span class="profileImg"><i class="glyphicon glyphicon-th-list"></i></span><a href="booking-history.php" class="" style="display: inline-block;">Booking History</a>
+			                                <span class="profileImg"><i class="glyphicon glyphicon-th-list"></i></span><a href="booking-history" class="" style="display: inline-block;">Booking History</a>
 											</li>
 											<li>
-			                                <span class="profileImg"><i class="glyphicon glyphicon-log-out"></i></span><a href="signout.php" class="" style="display: inline-block;">Sign Out</a>
+			                                <span class="profileImg"><i class="glyphicon glyphicon-log-out"></i></span><a href="signout" class="" style="display: inline-block;">Sign Out</a>
 											</li>
 			                            </ul>
 			                        </li>
@@ -104,8 +104,8 @@ s0.parentNode.insertBefore(s1,s0);
 			                        <li class="active dropdown">
 			                        	<a href="#" ss="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT </a>
 			                        	<ul class="dropdown-menu">
-			                                <li><a href="about-us.php">About Reflections</a></li>
-			                                <li><a href="key-personal.php">Key Personnel </a></li>
+			                                <li><a href="about-us">About Reflections</a></li>
+			                                <li><a href="key-personal">Key Personnel </a></li>
 			                                
 
 			                            </ul>
@@ -114,8 +114,8 @@ s0.parentNode.insertBefore(s1,s0);
 			                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOSPITALITY </a>
 			                            <ul class="dropdown-menu">
 			                                <li><a href="#">AMPHI THEATRE</a></li>
-			                                <li><a href="theatre-cafe-one.php"> REFLECTIONS THEATRE CAFE</a></li>
-			                                <li><a href="banquets.php">BANQUETS</a></li>
+			                                <li><a href="theatre-cafe-one"> REFLECTIONS THEATRE CAFE</a></li>
+			                                <li><a href="banquets">BANQUETS</a></li>
 			                                <li><a href="#">SPEAK EASY BAR</a></li>
 
 			                            </ul>
@@ -136,9 +136,9 @@ s0.parentNode.insertBefore(s1,s0);
 			                        <li class=" down"><a href="#">COMMUNITY </a>
 			                        </li>
 			                        <li><a href="#">WORKSHOPS</a></li>
-			                        <li><a href="blog.php">BLOG</a></li>
-			                        <li><a href="career.php">CAREERS</a></li>
-			                        <li><a href="contact.php">CONTACT US</a></li>
+			                        <li><a href="blog">BLOG</a></li>
+			                        <li><a href="career">CAREERS</a></li>
+			                        <li><a href="contact">CONTACT US</a></li>
 			                    </ul>
 			                </div>
 				        </nav>

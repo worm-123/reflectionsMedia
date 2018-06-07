@@ -649,6 +649,9 @@ text-align:center;
   overflow: hidden;
 } 
 
-
+.Rounded_Rectangle ul li a.active{
+  color: #fff !important;
+  background: #00253f !important
+}
 
 

@@ -18,6 +18,7 @@ if(isset($_POST["signIn"])){
       header('Location: '.$urlPath.'?'.$queryString);
       }else{
         echo "0";
+         include("sendSms.php");
       }
   }else{
     echo "Error";

@@ -60,6 +60,9 @@
                             <a href="blog.php"><i class="fa fa-files-o fa-fw"></i>Blog</a>
                         </li>
                         <li>
+                            <a href="inhouseProducts.php"><i class="fa fa-files-o fa-fw"></i>Inhouse Products</a>
+                        </li>
+                        <li>
                             <a href="usersRecord.php"><i class="fa fa-files-o fa-fw"></i>Users Record</a>
                         </li>
                         <li>
