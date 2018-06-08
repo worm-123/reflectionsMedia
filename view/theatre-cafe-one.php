@@ -15,7 +15,10 @@ require_once('header-threatre.php');
         <div class="inner">
             <ul>
             <?php 
-				$sql="select * from theatre_cafe";
+				//$sql="select * from theatre_cafe";
+                $dayCounter = 1;
+                $getDate= date('Y-m-d',strtotime("+".$dayCounter."days"));
+                $sql="select * from theatre_cafe where fromDate <= '$getDate' && toDate >= '$getDate'";
 				$loginQuery=mysqli_query($link, $sql);
 				while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
 				?>
@@ -56,7 +59,7 @@ require_once('header-threatre.php');
         <div class="inner">
             <ul>
             <?php 
-                $sql="select * from theatre_cafe";
+                $sql="select * from theatre_cafe where fromDate <= '' && toDate >= ''";
                 $loginQuery=mysqli_query($link, $sql);
                 while($row = mysqli_fetch_array($loginQuery, MYSQLI_ASSOC)){
                 ?>
@@ -80,7 +83,7 @@ require_once('header-threatre.php');
                       Your browser does not support HTML5 video.
                     </video>
                     </div >
-                    <a class="btn button" href="theatre-cafe-show-booking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a>
+                    <!-- <a class="btn button" href="theatre-cafe-show-booking.php?id=<?php echo base64_encode($row['id']); ?>">BOOK NOW</a> -->
                 </li>
             <?php } ?>
             </ul>

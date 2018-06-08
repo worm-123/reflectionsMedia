@@ -49,13 +49,22 @@ require_once('header-threatre.php');
 				      	<option value="13:00"><time>13:00</time></option>
 				      	<option value="14:00"><time>14:00</time></option>
 				      </select></td>
-				      <td width="25%"><select name="date" id="showDate" class="selectGuest timeBooking" style="width: 110px">
-				      	<option value="21/01/2018">21/01/2018</option>
-				      	<option value="22/01/2018">22/01/2018</option>
-				      	<option value="23/01/2018">23/01/2018</option>
-				      	<option value="24/01/2018">24/01/2018</option>
-				      	<option value="25/01/2018">25/01/2018</option>
-				      </select></td>
+				      <td width="25%">
+				      	<select name="date" id="showDate" class="selectGuest timeBooking" style="width: 110px">
+				      		<?php 
+				      		$dayCounter =1;
+				      		$row['fromDate'];
+				      		$row['toDate'];
+				      		$currentDate= date('Y-m-d',strtotime("+".$dayCounter."days"));
+				      		while( $currentDate < $row['toDate']){
+                    			$currentDate= date('Y-m-d',strtotime("+".$dayCounter."days"));
+                    		?>
+					      	<option value="<?php echo $currentDate?>"><?php echo $currentDate ?></option>
+					      	<?php 
+					      		$dayCounter++;
+					      }?>
+				      </select>
+				  	</td>
 				    </tr>
 				    <tr>
 				      <td colspan="2" width="75%">Ticket Type</td>

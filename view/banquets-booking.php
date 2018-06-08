@@ -181,7 +181,7 @@ require_once('header-threatre.php');
 				    <tr>
 				    	<td colspan="4">
 				    		<label class="container2">
-				    			I understant and accept <a href="#termsCondition" data-toggle="modal">term & condition</a> and <a href="#PrivacyPolicy" data-toggle="modal">privacy policy</a>
+				    			I understand and accept <a href="#termsCondition" data-toggle="modal">term & condition</a> and <a href="#PrivacyPolicy" data-toggle="modal">privacy policy</a>
 							  <input type="checkbox" checked="checked" name="agree" required="required">
 							  <span class="checkmark2"></span>
 							</label>

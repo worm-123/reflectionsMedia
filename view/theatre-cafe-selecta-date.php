@@ -14,7 +14,7 @@ require_once('header-threatre.php');
         <div class="inner Rounded_Rectangle">
             <ul>
                 <?php 
-                $dayCounter=0;
+                $dayCounter=1;
                 while($dayCounter <= 30){
                     $matchDate= date('Y-m-d',strtotime("+".$dayCounter."days"));
                 ?>
